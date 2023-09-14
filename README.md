@@ -119,6 +119,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 3. To differentiate it from the rest, call it “_EMPLOYEES” 
 4. Create another organization unit called “_ADMINS” 
 
+![Screenshot (27)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/81dc6ae5-93a9-40a0-b059-6bed49b78a46)
+
 5. You’re going to create a different admin account and login with it after
 6. Right click on admins > select new > select user
 7. Fill out the boxes > click next > set a password > make sure every box is unchecked
@@ -131,10 +133,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 1. Go back to Azure portal, go to virtual machines, find DC-1’s private IP address in the networking tab and copy it 
 2. Within the Azure portal, go back to Client-1 > networking > click network interface > DNS Servers > Custom > copy DC-1’s private IP Address then save
 
+![Screenshot (29)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/5e635633-0a72-4140-b8a0-702fbb0e336d)
+
 3. Once finished, restart Client-1 in the Azure portal 
 4. Log back into Client-1 as the original local admin 
 5. Right click start > click on system > In about section, click rename this pc > click change > click domain domain > type in the domain name you chose 
 6. A login prompt will appear and login within the context of the domain, proceed by logging in with the admin account you created earlier on DC-1
+
+![Screenshot (30)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/259dfbe6-1d45-434e-b30a-e6db21d2f98c)
 
 7. You will be greeted saying you’ve joined the domain, it will ask you to restart the computer, restart the computer for the changes to be in full effect
 
@@ -143,6 +149,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 2. Once logged in, right click start  > click system > remote desktop > select users that can remotely access this pc 
 3. Click Add > Type in “Domain Users” > check names and click ok
  
+ ![Screenshot (33)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/363c094e-781e-4b26-b62e-5508c469dd03)
+
 - This will allow anyone that are non-administrative users of the domain to log into Client-1 and have access to that machine 
 
 ### Create a bunch of Additional Users and attempt to login into Client 1 with one of the users 
@@ -150,6 +158,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 2. Go to start > search for Windows Powershell ISE > right click and run as administrator
 3. Create a new file > go to the new file > paste this script > run script (this will create new users in the _EMPLOYEES Organizational Unit for the domain)
 4. Go to start and search for Active Directory Users and Computers, find _EMPLOYEES, right click and refresh and you will see new users 
+
+![Uploading Screenshot (36).png…]()
 
 5. Select one of the users, write down their login information
 6. Go back into Client-1 and log in with that user in the context of the domain 
