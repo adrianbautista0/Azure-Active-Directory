@@ -61,7 +61,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Go back to the virtual machine page 
 - Select DC-1 > Networking > Click on Network Interface > IP configurations > Set Private IP Address to static
 
- ### Ensuring connectivity between the client and Domain Controller
+### Ensuring connectivity between the client and Domain Controller
 - On Azure, find the public IP address of Client-1 and copy it
 - Go to start on your computer (If on Windows) and run Microsoft Remote Desktop (if on mac download it from the app store)
 - Login in with the credentials you set for Client-1 then connect
