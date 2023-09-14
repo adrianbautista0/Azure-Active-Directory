@@ -117,12 +117,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 2. Right click “mydomain.com” or the domain name you chose > select new > select Organization Units 
 3. To differentiate it from the rest, call it “_EMPLOYEES” 
 4. Create another organization unit called “_ADMINS” 
-
-![Screenshot (27)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/81dc6ae5-93a9-40a0-b059-6bed49b78a46)
-
 5. You’re going to create a different admin account and login with it after
 6. Right click on admins > select new > select user
 7. Fill out the boxes > click next > set a password > make sure every box is unchecked
+ 
+![Screenshot (27)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/81dc6ae5-93a9-40a0-b059-6bed49b78a46)
+
 8. Once created, go to the admins folder, look for the user you just created > right click on said user > properties
 9. Go to member of and add to admins by typing in “Domain Admins”
 10. Check names then click ok and apply
