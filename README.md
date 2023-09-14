@@ -158,7 +158,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 3. Create a new file > go to the new file > paste this script > run script (this will create new users in the _EMPLOYEES Organizational Unit for the domain)
 4. Go to start and search for Active Directory Users and Computers, find _EMPLOYEES, right click and refresh and you will see new users 
 
-![Uploading Screenshot (36).png…]()
+![Screenshot (36)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/9f4620af-5c4f-4c93-93c4-ad57d3c58938)
 
 5. Select one of the users, write down their login information
 6. Go back into Client-1 and log in with that user in the context of the domain 
