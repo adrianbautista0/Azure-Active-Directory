@@ -37,7 +37,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 
-# Setting Up resources in azure 
+### Setting Up resources in azure 
 - To get started, go to your computer and head over to portal.azure.com 
 - From there, create a resource group
 
