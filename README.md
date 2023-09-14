@@ -156,7 +156,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 1. Login into DC-1 as the same administrative user account you logged into Client-1 with
 2. Go to start > search for Windows Powershell ISE > right click and run as administrator
 3. Create a new file > go to the new file > paste the script from the top of this github repository > run script (this will create new users in the _EMPLOYEES Organizational Unit for the domain)
-4. Go to start and search for Active Directory Users and Computers, find _EMPLOYEES, right click and refresh and you will see new users 
+4. Go to start > search for Active Directory Users and Computers > find _EMPLOYEES > right click refresh and you will see new users 
 
 ![Screenshot (36)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/9f4620af-5c4f-4c93-93c4-ad57d3c58938)
 
