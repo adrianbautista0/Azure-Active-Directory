@@ -40,6 +40,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ### Setting Up resources in azure 
 1. To get started, go to your computer and head over to portal.azure.com 
 2. From there, create a resource group
+![Screenshot (13)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/a84ecded-1d00-4390-9669-5bdbf489243d)
 
 3. While in Azure, create a virtual machine  
 4. Name it “DC-1” for Domain Controller
