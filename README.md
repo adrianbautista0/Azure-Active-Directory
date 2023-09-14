@@ -61,7 +61,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Go back to the virtual machine page 
 - Select DC-1 > Networking > Click on Network Interface > IP configurations > Set Private IP Address to static
 
-Ensuring connectivity between the client and Domain Controller
+ ### Ensuring connectivity between the client and Domain Controller
 - On Azure, find the public IP address of Client-1 and copy it
 - Go to start on your computer (If on Windows) and run Microsoft Remote Desktop (if on mac download it from the app store)
 - Login in with the credentials you set for Client-1 then connect
@@ -80,7 +80,7 @@ Ensuring connectivity between the client and Domain Controller
 - Go back to the instance of Client-1 and observe the changes in the command prompt
 - Close command prompt when finished 
 
-- Setting up Active Directory 
+### Setting up Active Directory 
 Go back to the instance of DC-1
 Once on there, go to start and find server manager 
 Click on Add roles and features > next(x3)
@@ -101,7 +101,7 @@ Username: mydomain.com\labuser
 Password: Password1
 
 
-Create an Admin and Normal User account in Active Directory 
+### Create an Admin and Normal User account in Active Directory 
 Once logged on the domain controller, go to server manager > click tools > open Active Directory Users and Computers 
 Right click “mydomain.com” or the domain name you chose > select new > select Organization Units 
 To differentiate it from the rest, call it “_EMPLOYEES” 
@@ -115,7 +115,7 @@ Go to member of and add to admins by typing in “Domain Admins”
 Check names then click ok and apply
 Log off the computer
 
-Joining Client 1 to your domain
+### Joining Client 1 to your domain
 Go back to Azure portal, go to virtual machines, find DC-1’s private IP address in the networking tab and copy it 
 Within the Azure portal, go back to Client-1 > networking > click network interface > DNS Servers > Custom > copy DC-1’s private IP Address then save
 
@@ -126,14 +126,14 @@ A login prompt will appear and login within the context of the domain, proceed b
 
 You will be greeted saying you’ve joined the domain, it will ask you to restart the computer, restart the computer for the changes to be in full effect
 
-Setup Remote desktop for non-administrative users on Client-1
+### Setup Remote desktop for non-administrative users on Client-1
  Log back into Client-1 in the context of your domain (log back into the same admin account you just used before you were logged off) 
 Once logged in, right click start  > click system > remote desktop > select users that can remotely access this pc 
 Click Add > Type in “Domain Users” > check names and click ok
  
 This will allow anyone that are non-administrative users of the domain to log into Client-1 and have access to that machine 
 
-Create a bunch of Additional Users and attempt to login into Client 1 with one of the users 
+### Create a bunch of Additional Users and attempt to login into Client 1 with one of the users 
 Login into DC-1 as the same administrative user account you logged into Client-1 with
 Go to start > search for Windows Powershell ISE > right click and run as administrator
 Create a new file > go to the new file > paste this script > run script (this will create new users in the _EMPLOYEES Organizational Unit for the domain)
