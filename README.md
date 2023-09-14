@@ -136,7 +136,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 3. Once finished, restart Client-1 in the Azure portal 
 4. Log back into Client-1 as the original local admin 
-5. Right click start > click on system > In about section, click rename this pc > click change > click domain domain > type in the domain name you chose 
+5. Right click start > click on system > In about section, click rename this pc > click change > check domain circle > type in the domain name you chose 
 6. A login prompt will appear and login within the context of the domain, proceed by logging in with the admin account you created earlier on DC-1
 
 ![Screenshot (30)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/259dfbe6-1d45-434e-b30a-e6db21d2f98c)
