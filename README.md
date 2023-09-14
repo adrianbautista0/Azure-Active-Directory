@@ -7,9 +7,9 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Script used to create users on the domain</h2>
+<h2>Script for Powershell ISE</h2>
 
-- ### [Script for Powershell ISE](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+- ### [Script used to create users on the domain](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
 <h2>Environments and Technologies Used</h2>
 
