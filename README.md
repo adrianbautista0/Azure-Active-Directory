@@ -65,7 +65,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### Ensuring connectivity between the client and Domain Controller
 1. On Azure, find the public IP address of Client-1 and copy it
-2. Go to start on your computer (If on Windows) and run Microsoft Remote Desktop (if on mac download it from the app store)
+2. Go to start on your computer (If on Windows) and run Microsoft Remote Desktop (if on Mac download it from the app store)
 3. Login in with the credentials you set for Client-1 then connect
 
 4. On your computer, go back to the Azure portal, find the private IP address of DC-1 and copy it
