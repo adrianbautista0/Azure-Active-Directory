@@ -90,11 +90,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 1. Go back to the instance of DC-1
 2. Once on there, go to start and find server manager 
 3. Click on Add roles and features > next(x3)
-4. Add Active Directory Domain Services and keep pressing next and install
+4. Add Active Directory Domain Services > keep pressing next and install
 
 ![Screenshot (21)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/40eea0bf-6208-49e2-8e75-59b957e413c0)
 
-5. Once Installed, you can close it 
+5. Once installed, you can close it 
 6. On the upper right hand corner, you will notice a yellow triangle with a exclamation point on it, click on it and select Promote this server to domain controller 
 
 ![Screenshot (22)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/801aaae6-ddff-4404-bb82-333d65321450)
