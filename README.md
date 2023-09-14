@@ -74,10 +74,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 7. While on command prompt, type in “ping -t “ with a space followed by the private IP address of DC-1
 8. You will see “Request timed out” because DC-1’s firewall is blocking ICMPV4 traffic
 
+![Screenshot (16)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/189130cf-6fae-4493-83b4-cd34fdd5564f)
+
 9. With DC-1’s public IP address copied, run another instance of Remote Desktop Connection and paste the IP address, then login with the credentials
 10. Once logged > go to start  > search for WF.MSC 
 11. Select inbound rules > expand > sort by protocol 
 12. Find ICMPV4 and enable both versions of Core Networking Diagnostics -ICMP Echo Request (ICMPv4 in)
+
+![Screenshot (17)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/a5701b88-cc00-4200-a180-2fdbe953207e)
 
 13. Go back to the instance of Client-1 and observe the changes in the command prompt
 14. Close command prompt when finished 
@@ -88,11 +92,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 3. Click on Add roles and features > next(x3)
 4. Add Active Directory Domain Services and keep pressing next and install
 
+![Screenshot (21)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/40eea0bf-6208-49e2-8e75-59b957e413c0)
+
 5. Once Installed, you can close it 
 6. On the upper right hand corner, you will notice a yellow triangle with a exclamation point on it, click on it and select Promote this server to domain controller 
 
+![Screenshot (22)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/801aaae6-ddff-4404-bb82-333d65321450)
+
 7. When on deployment configuration, select add new forest and add a domain name 
 8. To keep it generic, I would call it “mydomain.com”
+
+![Screenshot (24)](https://github.com/adrianbautista0/Azure-Active-Directory/assets/142345957/ce5f2ca8-84ff-4388-9018-b2d25d38910a)
 
 9. Then hit next and set a password for DRSM
 10. Keep clicking next and install
