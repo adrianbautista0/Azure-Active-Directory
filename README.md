@@ -29,7 +29,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set up a virtual machine running Windows Server in Azure
 - Set up Active Directory
 - Configure Domain Services
-- Join a vritual machine to your domain
+- Join a virtual machine to your domain
 - Create organizational units and users
 - Setup remote desktop for your virtual machine
 - Create adittional users
