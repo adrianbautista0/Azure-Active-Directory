@@ -113,7 +113,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 ### Create an Admin and Normal User account in Active Directory 
-1. Once logged on the domain controller, go to server manager > click tools > open Active Directory Users and Computers 
+1. Once logged onto the domain controller, go to server manager > click tools > open Active Directory Users and Computers 
 2. Right click “mydomain.com” or the domain name you chose > select new > select Organization Units 
 3. To differentiate it from the rest, call it “_EMPLOYEES” 
 4. Create another organization unit called “_ADMINS” 
