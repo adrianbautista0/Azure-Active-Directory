@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set up Active Directory
 - Configure Domain Services
 - Join a vritual machine to your domain
-- Create Organizational units and users
+- Create organizational units and users
 - Setup remote desktop for your virtual machine
 - Create adittional users
 
