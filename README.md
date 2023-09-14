@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Join a virtual machine to your domain
 - Create organizational units and users
 - Setup remote desktop for your virtual machine
-- Create adittional users
+- Create additional users using Powershell
 
 <h2>Deployment and Configuration Steps</h2>
 
