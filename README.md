@@ -108,7 +108,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 10. Keep clicking next and install
 11. Once it has finished, you will be logged out as it will be setting up as a Domain Controller 
 12. Log back into DC-1 in the context of the domain you just created
-- For example:
+- For example: <br>
   Username: mydomain.com\labuser <br> Password: Password1
 
 
