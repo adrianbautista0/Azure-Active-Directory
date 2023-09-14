@@ -38,49 +38,49 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 Setting Up resources in azure 
-To get started, go to your computer and head over to portal.azure.com 
-From there, create a resource group
+- To get started, go to your computer and head over to portal.azure.com 
+- From there, create a resource group
 
-While in Azure, create a virtual machine  
-Name it “DC-1” for Domain Controller
-Place it in the resource group that was created earlier
-Set the region of this virtual machine in the same region as the resource group
-For the image, set it the latest version of Windows Server 
-For size, you want a minimum of 2 virtual CPUs and 16 GB of memory
-Set a username and password
-Make sure to check both boxes under licensing at the bottom of the basic page and click create
+- While in Azure, create a virtual machine  
+- Name it “DC-1” for Domain Controller
+- Place it in the resource group that was created earlier
+- Set the region of this virtual machine in the same region as the resource group
+- For the image, set it the latest version of Windows Server 
+- For size, you want a minimum of 2 virtual CPUs and 16 GB of memory
+- Set a username and password
+- Make sure to check both boxes under licensing at the bottom of the basic page and click create
 
-When finished, go back to virtual machines page and create another virtual machine 
-Place it the same resource group that you created earlier 
-Name it “Client-1”
-Set the region of this virtual machine in the same region as the resource group
-Select Windows 10 Pro, version 22H2 for the image
-For size, you want a minimum of 2 virtual CPUs and 16 GB of memory
-Set a username and password 
-Make sure to check both boxes under licensing at the bottom of the basic page
-Go back to the virtual machine page 
-Select DC-1 > Networking > Click on Network Interface > IP configurations > Set Private IP Address to static
+- When finished, go back to virtual machines page and create another virtual machine 
+- Place it the same resource group that you created earlier 
+- Name it “Client-1”
+- Set the region of this virtual machine in the same region as the resource group
+- Select Windows 10 Pro, version 22H2 for the image
+- For size, you want a minimum of 2 virtual CPUs and 16 GB of memory
+- Set a username and password 
+- Make sure to check both boxes under licensing at the bottom of the basic page
+- Go back to the virtual machine page 
+- Select DC-1 > Networking > Click on Network Interface > IP configurations > Set Private IP Address to static
 
-Ensuring connectivity between the client and Domain Controller
-On Azure, find the public IP address of Client-1 and copy it
-Go to start on your computer (If on Windows) and run Microsoft Remote Desktop (if on mac download it from the app store)
-Login in with the credentials you set for Client-1 then connect
+- Ensuring connectivity between the client and Domain Controller
+- On Azure, find the public IP address of Client-1 and copy it
+- Go to start on your computer (If on Windows) and run Microsoft Remote Desktop (if on mac download it from the app store)
+- Login in with the credentials you set for Client-1 then connect
 
-On your computer, go back to the Azure portal, find the private IP address of DC-1 and copy it
-Then go back your virtual machine
-Go to start in the virtual machine and run command prompt
-While on command prompt, type in “ping -t “ with a space followed by the private IP address of DC-1
-You will see “Request timed out” because DC-1’s firewall is blocking ICMPV4 traffic
+- On your computer, go back to the Azure portal, find the private IP address of DC-1 and copy it
+- Then go back your virtual machine
+- Go to start in the virtual machine and run command prompt
+- While on command prompt, type in “ping -t “ with a space followed by the private IP address of DC-1
+- You will see “Request timed out” because DC-1’s firewall is blocking ICMPV4 traffic
 
-With DC-1’s public IP address copied, run another instance of Remote Desktop Connection and paste the IP address, then login with the credentials
-Once logged > go to start  > search for WF.MSC 
-Select inbound rules > expand > sort by protocol 
-Find ICMPV4 and enable both versions of Core Networking Diagnostics -ICMP Echo Request (ICMPv4 in)
+- With DC-1’s public IP address copied, run another instance of Remote Desktop Connection and paste the IP address, then login with the credentials
+- Once logged > go to start  > search for WF.MSC 
+- Select inbound rules > expand > sort by protocol 
+- Find ICMPV4 and enable both versions of Core Networking Diagnostics -ICMP Echo Request (ICMPv4 in)
 
-Go back to the instance of Client-1 and observe the changes in the command prompt
-Close command prompt when finished 
+- Go back to the instance of Client-1 and observe the changes in the command prompt
+- Close command prompt when finished 
 
-Setting up Active Directory 
+- Setting up Active Directory 
 Go back to the instance of DC-1
 Once on there, go to start and find server manager 
 Click on Add roles and features > next(x3)
