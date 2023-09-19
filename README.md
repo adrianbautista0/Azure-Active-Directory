@@ -4,7 +4,9 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This project is a comprehensive tutorial and walkthrough that guides users through the setup and configuration of essential resources in a Microsoft Azure environment. It covers various aspects of cloud infrastructure deployment, including the creation of virtual machines, network configurations, and the implementation of Azure active directory for identity and access management. Languages used for this tutorial include Powershell for automation and user creation within Active Directory. Environments used were Microsoft Azure for cloud-based provisioning, Windows 10 Pro for the client machine, and Windows Server for the domain controller. The services used were Microsoft Azure Virtual Machines for hosting both the client and domain controller. Applications that were used were Remote Desktop Connection for remote access and configuration. 
+
+<br />
 
 
 <h2>Script for Powershell ISE</h2>
